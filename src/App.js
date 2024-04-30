@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import Header from './Component/Partitial/header';
+import Page1 from './Component/Productpage/Page1';
+import Footer from './Component/Partitial/Footer';
+import { Route, Routes } from 'react-router-dom';
+import Prodetails from './Component/Productpage/Prodetails';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header/>
+      
+      <Routes>
+        <Route path='/' element={<Page1 />} />
+        <Route path='/pro_detail/:id' element={<Prodetails />} />
+      </Routes>
+
+      <Footer/>
+    </>
   );
 }
 

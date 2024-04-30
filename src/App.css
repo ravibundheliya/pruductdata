@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header CSS */
+li,
+ul,
+a {
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.logo img {
+  height: 30px;
+}
+
+.phl {
+  gap: 1.5rem;
+  color: black;
+  font-weight: 900;
+}
+
+.phl a {
+  color: black;
+  transition: 0.3s;
+}
+
+.phl a:hover {
+  color: orange;
+}
+
+/* Footer CSS */
+.footerclr {
+    background-color: rgb(244, 244, 244);
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .f1 {
+    display: grid;
+    gap: 10px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .ft {
+    font-weight: 900;
   }
-}
+  
+  .fd {
+    font-size: 14px;
+  }
+  
+  .fd a {
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .fb input {
+    padding: 10px 15px;
+  }
+  
+  .fsbt {
+    border: 0px;
+    padding: 13px 15px !important;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 1px;
+  }

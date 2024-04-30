@@ -1,0 +1,106 @@
+/* Page1 CSS */
+.part-2 {
+    height: 130vh;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: black transparent;
+    scroll-behavior: smooth;
+}
+ul,li{
+    list-style-type: none;
+    padding: 0;
+}
+.part-1{
+    background-color: rgb(255, 255, 255);
+    border-right: 1px solid lightgray;
+}
+.inpart-1{
+    overflow: hidden;
+}
+.css-7o8aqz-MuiSlider-rail{
+    background-color: black !important;
+}
+.css-188mx6n-MuiSlider-root{
+    color: black !important;
+    font-size: 5px !important;
+}
+.css-1as9v07-MuiSlider-thumb{
+    height: 10px !important;
+    width: 10px !important;
+}
+.btn1{
+    border-radius: 0px !important;
+    transition: .3s !important;
+}
+.btn1:hover{
+    border-radius: 10px !important;
+}
+.ctglist li{
+    color: black;
+    cursor: pointer;
+    transition: .3s;
+    text-transform: capitalize;
+}
+.ctglist li:hover{
+    font-weight: 700 !important;
+    padding-left: 5px !important;
+    color: orange !important;
+}
+.card{
+    border-color: lightgrey;
+}
+.card-title{
+    margin: 0;
+}
+.card-text{
+    margin-bottom: 5px;
+}
+.card-body{
+    padding: 0.1rem;
+}
+.price{
+    position: relative;
+    width: 100%;
+}
+.price h5{
+    width: 50%;
+}
+.search{
+    height: 100%;
+    width: 30%;
+    padding: 1rem;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+.sbtn{
+    border-radius: 10px;
+    padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+    transition: .3s;
+    background-color: #212529;
+    color: white;
+    margin-left: 1rem;
+}
+.sbtn:hover{
+    background-color: white;
+    color: #212529;
+}
+.newbox{
+    width: 100%;
+}
+.newbox form{
+    justify-content: right;
+}
+.imagebox{
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+}
+.imagebox img{
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    transition: .7s;
+}
+.card:hover .pimage{
+    transform: scale(1.1);
+}
