@@ -106,19 +106,21 @@ function Page1() {
                 {sproducts.map((item) => {
                   return (
                     <Col key={item.id} className='col-12 col-sm-6 col-md-4 col-lg-3'>
-                      
-                        <div className='text-center'>
-                          <div className="card" style={{ width: '100%' }}>
-                            <div className='imagebox'>
-                              <img src={item.thumbnail} className="card-img-top pimage" alt={"Image of " + item.title} />
-                            </div>
-                            <div className="card-body">
-                              <Link className='card-text stretched-link' to={`/pro_detail/${item.id}`}>{item.title}</Link>
-                              {/* <a className="card-text" ></a> */}
-                              <h6 className="card-title fw-bolder">₹{item.price} <del className='text-secondary fw-light'>{(item.price === "") ? '' : '₹'}{item.price + 85}</del></h6>
+
+                      <div className='text-center'>
+                        <div className="card" style={{ width: '100%' }}>
+                          <div className='imagebox'>
+                            <img src={item.thumbnail} className="card-img-top pimage" alt={"Image of " + item.title} />
+                          </div>
+                          <div className="card-body">
+                            <Link className='card-text stretched-link text-dark fw-bolder' to={`/pro_detail/${item.id}`}>{item.title}</Link>
+                            <div className='d-flex justify-content-around mb-2' style={{ alignItems: "center" }}>
+                              <h6 className="card-title fw-bolder" style={{ fontSize: "20px" }}>₹{item.price} <del className='text-secondary fw-light' style={{ fontSize: "14px" }}>{Math.round((item.price * 100) / (100 - item.discountPercentage))}</del></h6>
+                              <span className="rating" style={{ color: "#C2572B" }}>★<span style={{ fontSize: "14px" }}> {item.rating}</span></span>
                             </div>
                           </div>
                         </div>
+                      </div>
                     </Col>
                   )
                 })}

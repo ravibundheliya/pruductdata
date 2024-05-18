@@ -6,73 +6,92 @@
     scrollbar-color: black transparent;
     scroll-behavior: smooth;
 }
-ul,li{
+
+ul,
+li {
     list-style-type: none;
     padding: 0;
 }
-.part-1{
+
+.part-1 {
     background-color: rgb(255, 255, 255);
     border-right: 1px solid lightgray;
 }
-.inpart-1{
+
+.inpart-1 {
     overflow: hidden;
 }
-.css-7o8aqz-MuiSlider-rail{
+
+.css-7o8aqz-MuiSlider-rail {
     background-color: black !important;
 }
-.css-188mx6n-MuiSlider-root{
+
+.css-188mx6n-MuiSlider-root {
     color: black !important;
     font-size: 5px !important;
 }
-.css-1as9v07-MuiSlider-thumb{
+
+.css-1as9v07-MuiSlider-thumb {
     height: 10px !important;
     width: 10px !important;
 }
-.btn1{
+
+.btn1 {
     border-radius: 0px !important;
     transition: .3s !important;
 }
-.btn1:hover{
+
+.btn1:hover {
     border-radius: 10px !important;
 }
-.ctglist li{
+
+.ctglist li {
     color: black;
     cursor: pointer;
     transition: .3s;
     text-transform: capitalize;
 }
-.ctglist li:hover{
+
+.ctglist li:hover {
     font-weight: 700 !important;
     padding-left: 5px !important;
     color: orange !important;
 }
-.card{
+
+.card {
     border-color: lightgrey;
 }
-.card-title{
+
+.card-title {
     margin: 0;
 }
-.card-text{
+
+.card-text {
     margin-bottom: 5px;
 }
-.card-body{
+
+.card-body {
     padding: 0.1rem;
 }
-.price{
+
+.price {
     position: relative;
     width: 100%;
 }
-.price h5{
+
+.price h5 {
     width: 50%;
 }
-.search{
+
+.search {
     height: 100%;
     width: 30%;
     padding: 1rem;
     border-radius: 10px;
     padding-left: 20px;
 }
-.sbtn{
+
+.sbtn {
     border-radius: 10px;
     padding: 0.25rem 0.75rem 0.25rem 0.75rem;
     transition: .3s;
@@ -80,27 +99,304 @@ ul,li{
     color: white;
     margin-left: 1rem;
 }
-.sbtn:hover{
+
+.sbtn:hover {
     background-color: white;
     color: #212529;
 }
-.newbox{
+
+.newbox {
     width: 100%;
 }
-.newbox form{
+
+.newbox form {
     justify-content: right;
 }
-.imagebox{
+
+.imagebox {
     height: 250px;
     width: 100%;
     overflow: hidden;
 }
-.imagebox img{
+
+.imagebox img {
     height: 100%;
     width: auto;
     object-fit: cover;
     transition: .7s;
 }
-.card:hover .pimage{
+
+.card:hover .pimage {
     transform: scale(1.1);
 }
+
+.slick-arrow {
+    display: none !important;
+}
+
+.slick-list {
+    width: 80% !important;
+    margin-left: 20%;
+    overflow: hidden;
+}
+
+
+.slick-slider {
+    overflow: hidden;
+}
+
+.slick-dots {
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    align-items: start;
+    width: 20% !important;
+    height: 100%;
+}
+
+.slick-dots li {
+    width: 100%;
+}
+
+.slick-dots li div img {
+    width: 100%;
+    height: 100% !important;
+}
+
+.qtyvalue {
+    height: 50px;
+    width: 70px;
+    border: 1px solid lightgray;
+    font-size: 18px;
+    color: grey;
+    padding: 20px;
+}
+
+.newqtyvalue {
+    height: 40px;
+    width: 80px;
+}
+
+.qtybtn button {
+    height: 25px;
+    width: 25px;
+    border: 1px solid lightgray;
+    background-color: white;
+    transition: .3s;
+}
+
+.newqtybtn button {
+    height: 20px;
+}
+
+.qtybtn button:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+
+.addtobtn {
+    background-color: #212529;
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: .3s;
+    border-radius: 0px;
+    border-width: 0;
+}
+
+
+.addtobtn:hover {
+    background-color: black;
+    color: white;
+}
+
+.newaddtobtn:hover {
+    background-color: rgb(255, 90, 90);
+    color: white;
+}
+
+.heart {
+    gap: 5px;
+}
+
+.heart div {
+    cursor: pointer;
+    transition: .3s;
+}
+
+.heart div:hover {
+    color: #C2572B;
+}
+
+.ctg-det div {
+    padding-top: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.ctg-det div:hover {
+    text-decoration: underline;
+}
+
+.drplist div {
+    cursor: pointer;
+    color: grey;
+    transition: .3s;
+}
+
+.drplist div:hover {
+    color: black !important;
+}
+
+.reviewlist input,
+textarea {
+    border: 1px solid lightgray !important;
+}
+
+.rw-start i {
+    color: lightgray;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.rw-start i:hover {
+    color: #C2572B;
+}
+
+.crtbtn {
+    background-color: black;
+    color: white;
+}
+
+/* Rating css */
+.star-rating {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.stars-outer {
+    position: relative;
+    display: inline-block;
+}
+
+.stars-outer::before {
+    content: '★★★★★';
+    /* Use Unicode stars */
+    color: #ccc;
+    font-size: 24px;
+}
+
+.stars-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+}
+
+.stars-inner::before {
+    content: '★★★★★';
+    /* Use Unicode stars */
+    color: #C2572B;
+    font-size: 24px;
+}
+
+.rating {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.cartmenu {
+    align-items: center;
+}
+
+.cartimg img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+.cartborder {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+.carthead {
+    height: 50px;
+}
+
+.closeborder {
+    border-right: 1px solid lightgray;
+    padding: 10px;
+    text-align: center;
+}
+
+.closeborder i {
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 0px 2px;
+    color: white;
+    background-color: lightgray;
+    transition: .3s;
+}
+
+.closeborder i:hover {
+    background-color: black;
+}
+
+.plink {
+    color: #212529;
+}
+
+.plink:hover {
+    text-decoration: underline;
+}
+
+.psldimg div {
+    display: flex;
+    justify-content: center;
+    right: 0 !important;
+    align-items: center;
+}
+
+.psldimg div img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 760px) {
+    .cartborder {
+        border: 1px solid lightgray;
+        display: grid;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+
+    .carthead {
+        display: none;
+    }
+
+    .closeborder {
+        border-right: 0px;
+        text-align: right;
+        width: 100%;
+    }
+
+    .p-price {
+        font-weight: 500;
+    }
+}
+
+
+/* @media (min-width: 990px)and(max-width: 1200px) {
+    .psldimg div img {
+        height: 400px;
+    }
+} */
